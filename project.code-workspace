@@ -1,0 +1,17 @@
+{
+    "settings": {
+        "makefile.loggingLevel": "Verbose",
+        "makefile.makePath": "C:\\msys64\\usr\\bin\\",
+        "makefile.extensionOutputFolder": "",
+        "makefile.extensionLog": ".vscode\\extension.log",
+        "makefile.makeDirectory": "code\\GCC",
+        "makefile.configurations": [
+            {
+                "name": "Default",
+                "makeArgs": [
+                    "FEATURE_A=y"
+                ]
+            }
+        ]
+    }
+}
