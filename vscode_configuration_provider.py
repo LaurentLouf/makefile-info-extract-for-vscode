@@ -31,7 +31,7 @@ def get_targets_log_path(target : str):
     return target_file_path
 
 def get_variables(targets_file_content : str):
-    variables_raw = list(filter(lambda x : re.match(r'^[a-zA-Z0-9_]+\s*:?=', x) is not None, targets_file_content.splitlines()))
+    variables_raw = list(filter(lambda x : re.match(r'^[a-zA-Z0-9_]+\s*:?= *(?P<value>[^\n\r]+)', x) is not None, targets_file_content.splitlines()))
     variables = {}
 
     for variable in variables_raw:
